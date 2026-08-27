@@ -1,0 +1,36 @@
+body{
+    background-color: #ffe4c4;
+    font-family: Arial, sans-serif;
+}
+h1{
+    color:#1e90ff;
+    font-size: 2.2rem;
+    text-align: center;
+}
+.links-container {
+    width: 70%;
+    margin: 25px auto;
+    padding: 20px;
+    background-color: #f1f5ff;
+    border: 2px solid #b9c8ee;
+    border-radius: 12px;
+}
+.site-link {
+    display: inline-block;
+    margin: 8px;
+    padding: 10px 16px;
+    color: #173fa5;
+    background-color: white;
+    border: 1px solid #7d96d8;
+    border-radius: 8px;
+}
+.smit-image {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    padding: 10px;
+    border: 3px solid #254eda;
+    margin: 15px;
+    border-radius: 18px;
+    background-color: #7d96d8;
+}

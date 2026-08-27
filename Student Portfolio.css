@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #f3f6fb;
+    color: #24324a;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    min-height: 32vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #3156d8;
+    color: #f8faff;
+    padding: 30px;
+}
+
+.header-content h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.header-content p {
+    font-size: 1.3rem;
+    margin: 8px 0 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding: 16px;
+    background-color: #1f3f9f;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    width: 90%;
+    max-width: 1050px;
+    margin: 35px auto;
+}
+
+section {
+    background-color: white;
+    margin-bottom: 30px;
+    padding: 30px;
+    border: 1px solid #d8e0ee;
+    border-radius: 14px;
+}
+
+#about {
+    position: relative;
+}
+
+.about-section {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.about-image {
+    flex: 0 0 170px;
+}
+
+.profile-placeholder {
+    width: 160px;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #dce6ff;
+    border: 5px solid #3156d8;
+    color: #3156d8;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.about-text {
+    flex: 1;
+}
+
+h2 {
+    color: #263f72;
+    font-size: 1.8rem;
+}
+
+.skills-list {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skill-card {
+    width: 17%;
+    min-width: 140px;
+    padding: 20px 10px;
+    text-align: center;
+    background-color: #edf2ff;
+    border: 1px solid #bdccef;
+    border-radius: 10px;
+    font-weight: bold;
+    color: #294a9f;
+}
+
+.content-layout {
+    display: flex;
+    gap: 25px;
+    align-items: stretch;
+}
+
+article,
+aside {
+    flex: 1;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+article {
+    background-color: #f8faff;
+}
+
+aside {
+    background-color: #edf2ff;
+    border-left: 5px solid #3156d8;
+}
+
+footer {
+    padding: 25px;
+    text-align: center;
+    background-color: #1f3f9f;
+    color: white;
+}
+
+footer a {
+    display: inline-block;
+    margin-top: 5px;
+    color: white;
+    font-weight: bold;
+}
