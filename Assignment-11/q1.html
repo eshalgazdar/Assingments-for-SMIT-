@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch API CRUD Practice</title>
+    <link rel="stylesheet" href="q1.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <h1>Fetch API CRUD Practice</h1>
+        <p class="methods-nav">GET &middot; POST &middot; PUT &middot; PATCH &middot; DELETE</p>
+    </header>
+
+    <main class="container">
+        <!-- Add Post Section -->
+        <section class="card form-card">
+            <h2>Add a new post (POST)</h2>
+            <form id="add-post-form">
+                <div class="form-row">
+                    <div class="form-group flex-grow">
+                        <input type="text" id="post-title" placeholder="Post title" required>
+                    </div>
+                    <div class="form-group user-id-group">
+                        <input type="number" id="user-id" placeholder="1" value="1" required min="1">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <textarea id="post-body" rows="4" placeholder="Write post content..." required></textarea>
+                </div>
+                <div class="button-group">
+                    <button type="submit" class="btn btn-orange">Add Post &mdash; POST</button>
+                    <button type="button" id="reload-btn" class="btn btn-secondary">Reload Posts &mdash; GET</button>
+                </div>
+            </form>
+            <div id="status-message" class="status-msg hidden"></div>
+            <p class="api-note">Practice API: JSONPlaceholder. It returns example responses, but POST/PUT/PATCH/DELETE changes are not permanently saved on its server. This page updates the local display so you can see each operation.</p>
+        </section>
+
+        <!-- Posts Section -->
+        <section class="posts-section">
+            <div class="posts-header">
+                <h2>Posts</h2>
+                <span id="posts-count">6 posts shown</span>
+            </div>
+            <div id="loading-spinner" class="loading hidden">Loading posts...</div>
+            <div id="posts-container" class="posts-grid"></div>
+        </section>
+    </main>
+
+    <!-- Modal for Edit (PUT/PATCH) -->
+    <div id="edit-modal" class="modal hidden">
+        <div class="modal-content">
+            <h3 id="modal-title">Edit Post</h3>
+            <form id="edit-form">
+                <input type="hidden" id="edit-id">
+                <div class="form-group">
+                    <label for="edit-title">Title</label>
+                    <input type="text" id="edit-title" required>
+                </div>
+                <div class="form-group" id="edit-body-group">
+                    <label for="edit-body">Content</label>
+                    <textarea id="edit-body" rows="4" required></textarea>
+                </div>
+                <div class="modal-buttons">
+                    <button type="submit" class="btn btn-orange" id="modal-submit-btn">Save Changes</button>
+                    <button type="button" id="modal-cancel-btn" class="btn btn-secondary">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="q1.js"></script>
+</body>
+</html>
