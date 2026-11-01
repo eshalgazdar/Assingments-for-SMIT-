@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Explorer</title>
+    <link rel="stylesheet" href="q2.css">
+</head>
+<body>
+    <header class="main-header">
+        <h1>Online Store &mdash; Product Explorer</h1>
+        <p>Discover top products with DummyJSON API &amp; Fetch (.then chaining)</p>
+    </header>
+
+    <main class="container">
+        <div class="controls">
+            <button id="refresh-products" class="btn">Reload Products</button>
+        </div>
+
+        <div id="loading" class="loading hidden">Loading products from store...</div>
+        <div id="error-message" class="error-msg hidden"></div>
+        
+        <div id="products-grid" class="products-grid"></div>
+    </main>
+
+    <script src="q2.js"></script>
+</body>
+</html>

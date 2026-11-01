@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Finder</title>
+    <link rel="stylesheet" href="q3.css">
+</head>
+<body>
+    <header class="main-header">
+        <h1>Recipe Finder &amp; Meal Planner</h1>
+        <p>Discover delicious recipes with async/await and DummyJSON</p>
+    </header>
+
+    <main class="container">
+        <div class="controls">
+            <button id="refresh-recipes" class="btn">Reload Recipes</button>
+        </div>
+
+        <div id="loading" class="loading hidden">Loading delicious recipes...</div>
+        <div id="error-message" class="error-msg hidden"></div>
+
+        <div id="recipes-grid" class="recipes-grid"></div>
+    </main>
+
+    <!-- Recipe Details Modal -->
+    <div id="recipe-modal" class="modal hidden">
+        <div class="modal-content">
+            <button id="modal-close" class="close-btn">&times;</button>
+            <h2 id="modal-recipe-title">Recipe Name</h2>
+            <p id="modal-recipe-cuisine" class="modal-cuisine">Cuisine</p>
+            
+            <div class="modal-section">
+                <h3>Preparation &amp; Cooking</h3>
+                <p id="modal-prep-time">Prep time: 0 mins</p>
+            </div>
+
+            <div class="modal-section">
+                <h3>Ingredients</h3>
+                <ul id="modal-ingredients-list" class="ingredients-list"></ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="q3.js"></script>
+</body>
+</html>

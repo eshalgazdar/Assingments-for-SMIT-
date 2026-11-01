@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Request Practice: Create & Update Post</title>
+    <link rel="stylesheet" href="q4.css">
+</head>
+<body>
+    <header class="main-header">
+        <h1>Learning Platform &mdash; Announcement &amp; Post Operations</h1>
+        <p>Practice POST, PUT, PATCH, and DELETE with async/await and Reusable Request Helper</p>
+    </header>
+
+    <main class="container">
+        <!-- Form Card -->
+        <section class="card">
+            <h2>Create New Announcement (POST)</h2>
+            <form id="announcement-form">
+                <div class="form-group">
+                    <label for="title">Title</label>
+                    <input type="text" id="title" placeholder="Announcement title" required>
+                </div>
+                <div class="form-row">
+                    <div class="form-group flex-grow">
+                        <label for="userId">User ID</label>
+                        <input type="number" id="userId" value="1" min="1" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="body">Content</label>
+                    <textarea id="body" rows="4" placeholder="Announcement content..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit Announcement (POST)</button>
+            </form>
+        </section>
+
+        <!-- Operations Console Card -->
+        <section class="card">
+            <h2>CRUD Lifecycle Operations (/posts/1)</h2>
+            <div class="action-buttons">
+                <button id="btn-post" class="btn btn-primary">1. Test POST</button>
+                <button id="btn-put" class="btn btn-success">2. Test PUT (/posts/1)</button>
+                <button id="btn-patch" class="btn btn-warning">3. Test PATCH (/posts/1)</button>
+                <button id="btn-delete" class="btn btn-danger">4. Test DELETE (/posts/1)</button>
+            </div>
+
+            <div class="output-container">
+                <h3>Execution Result &amp; Status</h3>
+                <pre id="output-box" class="output-box">Click any operation above to test...</pre>
+            </div>
+        </section>
+    </main>
+
+    <script src="q4.js"></script>
+</body>
+</html>
