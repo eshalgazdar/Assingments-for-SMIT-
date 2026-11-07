@@ -1,0 +1,4 @@
+I learned that Node.js runs JavaScript outside the browser.
+I learned how to use core modules such as os, path, and fs.
+I learned how to create, read, append, and rename files.
+I also learned how to organize file paths with the path module.
